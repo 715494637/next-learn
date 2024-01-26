@@ -6,7 +6,7 @@ export default function GalLayout(
     }
 ) {
     return (
-        <main className="" >
+        <main className="min-h-screen w-screen " >
             {children} 
         </main>
      

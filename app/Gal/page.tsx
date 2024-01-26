@@ -1,22 +1,18 @@
 
-import GalDropdown from "@/components/ui/GalDropdown";
+
+import GalBottonBar from "@/components/ui/GalBottonBar";
 import Galgame from "@/components/ui/Galgame";
 
 
 export default function page() {
     return (
-
-        <div className="w-full h-full flex flex-row bg-[url(/back.png)] " >
-            <div className="grid content-between bg-opacity-75 bg-gray-50/5 hover:bg-opacity-10 py-4 pb-12 border-r border-[#313131] z-10  ">
-                <GalDropdown />
-            </div>
-            <div className="w-[80%] h-full mx-auto p-10">
-                <div className="flex items-center justify-center px-2">
+        <div className="w-full  h-full   fixed  bg-[url(/back.png)]  " >
+            <div className="flex items-center justify-center px-2 h-[75%]">
                     <Galgame />
-                </div>
             </div>
-
-
+            <div className=" w-full h-[25%]  grid pt-4 px-12 content-end justify-items-center py-3 " style={{ backgroundImage: 'linear-gradient(to top, #2265b4, transparent)' }}>
+                <GalBottonBar />
+            </div>
         </div>
 
     )
